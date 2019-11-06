@@ -1,10 +1,10 @@
 export default {
   container: {
     flex: 1,
-    backgroundColor: "#F2F2F2",
+    backgroundColor: "#121212",
   },
   drawerCover: {
-    backgroundColor: "#fff",
+    backgroundColor: "#000",
     height: 104,
     flexDirection: "row",
     alignItems: "center",
@@ -22,6 +22,7 @@ export default {
     fontSize: 17,
     fontWeight: "bold",
     marginRight: 16,
+    color: 'white',
     flex: 1
   },
   menuItem: {
@@ -29,7 +30,8 @@ export default {
   },
   menuText: {
     marginLeft: 16,
-    fontSize: 17
+    fontSize: 17,
+    color: 'white'
   },
   footer: {
     marginLeft: 16,

@@ -40,6 +40,13 @@ expo start
 
 Tap the "Run on iOS simulator" on the menu.
 
+### 3. How to pass in the login page
+
+Since the login page is a non-functional page, you can login to the app by using demo account.
+
+Please note that you must use this email when loggin in. "demo@gmail.com"
+And use any text as a password.
+
 ## Documentation
 
 This is the well structured boilerplate project for a React Native Expo application development.

@@ -4,7 +4,7 @@ import { Content, Text, List, ListItem, Container, View, Icon } from "native-bas
 import _ from "lodash";
 import styles from "./styles";
 
-const avatarImage = require("../../../assets/avatar.png");
+const avatarImage = require("../../../assets/images/me.png");
 
 class SideBar extends Component {
   render() {
