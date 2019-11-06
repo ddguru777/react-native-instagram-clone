@@ -13,9 +13,12 @@ import {
 } from 'react-navigation-tabs';
 
 import Usernavi from "./UserNavigator";
+import Userprofile from "../containers/UserprofileContainer";
 
 const iconHome = require('../../assets/images/tabbar/home.png');
-const iconSchedule = require('../../assets/images/tabbar/schedule.png');
+const iconSearch = require('../../assets/images/tabbar/search.png');
+const iconNotification = require('../../assets/images/tabbar/notification.png');
+const iconFollow = require('../../assets/images/tabbar/follow.png');
 const iconProfile = require('../../assets/images/tabbar/profile.png');
 
 const styles = StyleSheet.create({
@@ -23,8 +26,16 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    borderBottomWidth: 2,
-    borderBottomColor: '#fff',
+    borderTopWidth: 3,
+    borderTopColor: '#121212',
+    paddingHorizontal: 10,
+  },
+  tabBarItemContainerFocused: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderTopWidth: 3,
+    borderTopColor: '#fff',
     paddingHorizontal: 10,
   },
   tabBarIcon: {
@@ -32,7 +43,7 @@ const styles = StyleSheet.create({
     height: 23,
   },
   tabBarIconFocused: {
-    tintColor: '#555CC4',
+    // tintColor: '#fff',
   },
   headerContainer: {
     height: 70,
@@ -61,11 +72,17 @@ export default createBottomTabNavigator(
     Home: {
       screen: Usernavi
     },
-    Schedule: {
+    Search: {
+      screen: Usernavi
+    },
+    Notification: {
+      screen: Usernavi
+    },
+    Follow: {
       screen: Usernavi
     },
     Profile: {
-      screen: Usernavi
+      screen: Userprofile
     },
   },
   {
@@ -78,8 +95,14 @@ export default createBottomTabNavigator(
           case 'Home':
             iconSource = iconHome;
             break;
-          case 'Schedule':
-            iconSource = iconSchedule;
+          case 'Search':
+            iconSource = iconSearch;
+            break;
+          case 'Notification':
+            iconSource = iconNotification;
+            break;
+          case 'Follow':
+            iconSource = iconFollow;
             break;
           case 'Profile':
             iconSource = iconProfile;
@@ -88,7 +111,7 @@ export default createBottomTabNavigator(
             iconSource = iconHome;
         }
         return (
-          <View style={styles.tabBarItemContainer}>
+          <View style={styles.tabBarItemContainer, focused && styles.tabBarItemContainerFocused}>
             <Image
               resizeMode="contain"
               source={iconSource}

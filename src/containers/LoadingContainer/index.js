@@ -14,7 +14,7 @@ class LoadingContainer extends Component {
     //   ...Ionicons.font,
     // })
 
-    this.props.navigation.navigate(this.props.auth.token ? "App" : "Login");
+    this.props.navigation.navigate(this.props.auth.token ? "App" : "App");
   }
   render() {
     return (

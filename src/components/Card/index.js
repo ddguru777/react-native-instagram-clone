@@ -32,6 +32,11 @@ class RealCard extends Component {
                             <Text style={{ color: 'white', fontWeight: '800' }}>Dave Stuart</Text>
                         </Body>
                     </Left>
+                    <Right>
+                        <Button transparent>
+                            <Image source={require('../../../assets/images/btn-share.png')} style={{ width:35, height:35 }}/>
+                        </Button>
+                    </Right>
                 </CardItem>
                 <CardItem cardBody style={{ backgroundColor: '#121212' }}>
                     <Image source={images[this.props.imageSource]} style={{ height: cardWidth, width: cardWidth, flex: 1 }}
@@ -40,15 +45,18 @@ class RealCard extends Component {
                 <CardItem style={{ height: 45, backgroundColor: '#121212' }}>
                     <Left>
                         <Button transparent>
-                            <Icon name="ios-heart" style={{ color: 'gray'}} />
+                            <Icon name="ios-heart-empty" style={{ color: 'gray'}} />
                         </Button>
                         <Button transparent>
-                            <Icon name="ios-chatbubbles" style={{ color: 'gray'}} />
+                            <Icon name="md-chatboxes" style={{ color: 'gray'}} />
                         </Button>
                         <Button transparent>
                             <Icon name="ios-send" style={{ color: 'gray'}} />
                         </Button>
                     </Left>
+                    <Right>
+                        <Text style={{ color: 'gray'}} >13 minutes ago</Text>
+                    </Right>
                 </CardItem>
                 <CardItem style={{ backgroundColor: '#121212' }}>
                     <Body>

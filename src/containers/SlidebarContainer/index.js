@@ -10,12 +10,12 @@ class SidebarContainer extends Component {
       {
         name: "Search User",
         route: "Usernavi",
-        icon: "search"
+        icon: "ios-search"
       },
       {
         name: "Logout",
         route: "Logout",
-        icon: "log-out"
+        icon: "ios-log-out"
       }
     ];
   }

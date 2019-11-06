@@ -127,7 +127,7 @@ export default class Userprofile extends Component {
             paddingBottom: Platform.OS === 'ios' ? 0 : 0, }}>
           <Left style={styles.headerLeft}>
             <Button transparent onPress={() => this.props.navigation.pop()}>
-              <Icon name="arrow-back" style={{ color: "#000" }}/>
+              <Icon name="ios-menu" style={{ color: "#000" }}/>
             </Button>
           </Left>
           <Body style={styles.headerBody}>

@@ -124,7 +124,7 @@ export default class Home extends Component {
             paddingBottom: Platform.OS === 'ios' ? 0 : 0, }}>
           <Left style={styles.headerLeft}>
             <Button transparent onPress={() => this.props.navigation.openDrawer()}>
-              <Icon name="menu" style={{ color: "gray" }}/>
+              <Icon name="ios-menu" style={{ color: "gray" }}/>
             </Button>
           </Left>
           <Body style={styles.headerBody}>
